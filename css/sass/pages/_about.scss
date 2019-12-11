@@ -1,0 +1,117 @@
+#about {
+
+    .title {
+        @include large {
+            margin: .5em 0;
+            text-align:center;
+        }
+    }
+
+    .about-content {
+        width: 80%;
+        min-height: 60%;
+        margin-left: 10%;
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0,0,0,0.025);
+        border-radius: 10px;
+        padding: 4em 2em 0 2.5em;
+        position:relative;
+
+        @include veryLarge {
+            width:90%;
+            margin-left: 5%;
+            min-height: 45%;
+        }
+
+        @include large {
+            min-height: 85%;
+        }
+
+        @include small {
+            min-height: 90%;
+        }
+
+        @include verysmall {
+            min-height: 82.5%;
+        }
+
+        @include smallHeight {
+            min-height: 90%;
+        }
+
+        @include verySmallHeight {
+            min-height: 110%;
+        }
+
+        @include superSmallHeight {
+            min-height: 120%;
+        }
+        .about-img {
+            position:absolute;
+            bottom:0;
+            right: 2.5%;
+            width:25vw;
+
+            @include large {
+                right: 50%;
+                transform:translateX(50%);
+            }
+
+            @include medium {
+                width:32.5vw;
+            }
+
+            @include verysmall {
+                width: 40vw;
+            }
+        }
+
+        .text {
+            margin-top: 30px;
+
+            @include veryLarge {
+                margin-top: 0px;
+            }
+
+            .first-sentence, .paragraph {
+                font-size: 1.5rem;
+                font-weight: lighter;
+                color: lighten($mainGrey, 5%);
+                margin-bottom: 2em;
+
+                @include veryLarge {
+                    font-size: 1rem;
+                }
+
+                @include large {
+                    font-size: 1.15rem;
+                    text-align:center;
+                }
+
+                @include verysmall {
+                    font-size: 1rem;
+                }
+            }
+
+            .paragraph {
+                width: 60%;
+                line-height: 1.5em;
+                font-size: 1.35rem;
+
+                @include veryLarge {
+                    font-size: .95rem;
+                }
+
+                @include large {
+                    font-size: 1rem;
+                    margin: 2em auto;
+                }
+
+                @include verysmall {
+                    width: 90%;
+                    font-size: .85rem;
+                }
+            }
+        }
+    }
+}

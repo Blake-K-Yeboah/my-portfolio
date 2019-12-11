@@ -1,0 +1,33 @@
+.btn {
+    width:100px;
+    height:40px;
+    border: none;
+    font-size: 1.05rem;
+    border-radius:5px;
+    border-radius: 5px;
+    cursor:pointer;
+    
+    &.primary {
+        background: $primaryGradient;
+        color: #fff;
+
+        &:hover {
+            background: linear-gradient(129deg, rgba(237,134,219,1) 0%, rgba(159,121,176,1) 100%);
+        }
+    }
+
+    &.secondary {
+        background: linear-gradient(129deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+        border: 3px solid $primaryColor;
+        color: $primaryColor;
+        margin-left:10px;
+
+        &:hover {
+            background: linear-gradient(129deg, rgba(235,235,235,1) 0%, rgba(225,225,225,1) 100%);
+        }
+    }
+}
+
+.bold {
+    font-weight: bold;
+}

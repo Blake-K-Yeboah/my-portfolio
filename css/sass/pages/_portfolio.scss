@@ -1,0 +1,137 @@
+#portfolio {
+
+    .projects {
+        margin-left: 10%;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em 1.5em;
+        width: 80%;
+        list-style-type: none;
+
+        @include veryLarge {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include medium {
+            grid-template-columns: 1fr;
+            gap: 3em 1.5em;
+        }
+
+        .project {
+            background: #fff;
+            border-radius: 5px;
+            height: 450px;
+            position:relative;            
+            box-shadow: 0 0 15px rgba(0,0,0,0.025);
+
+            @include large {
+                height: 400px;
+            }
+
+            @include medium {
+                height: 500px;
+            }
+
+            @include small {
+                height: 525px;
+            }
+
+            &:last-of-type {
+                @include medium {
+                    margin-bottom: 100px;
+                }
+            }
+
+            .project-img {
+                width:100%;
+                border-radius: 5px 5px 0 0;
+            }
+
+            .project-title {
+                font-weight:normal;
+                padding:15px 10px;
+                font-size: 1.5rem;
+                color:$mainGrey;
+
+                @include large {
+                    font-size: 1.25rem;
+                }
+
+                @include small {
+                    text-align:center;
+                    padding: 17.5px 0px;
+                }
+            }
+
+            .project-desc {
+                padding:0 0 20px 10px;
+                font-size:1.15rem;
+                line-height: 1.25em;
+                color: lighten($mainGrey, 10%);
+
+                @include large {
+                    font-size: 1rem;
+                }
+
+                @include small {
+                    text-align:center;
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+            }
+
+            .skills {
+                padding-left: 10px;
+                position:absolute;
+                bottom: 75px;
+
+                @include large {
+                    font-size: .95rem;
+                }
+
+                @include small {
+                    text-align:center;
+                    padding: 0;
+                    bottom: 155px;
+                    left:50%;
+                    transform:translateX(-50%);
+                }
+
+                .main {
+                    font-weight:bold;
+                    letter-spacing: .01em;
+                }
+            }
+
+            .btn-group {
+                position:absolute;
+                bottom: 10px;
+                left: 10px;
+                
+                @include small {
+                    bottom: 15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    .btn:first-of-type {
+                        position:absolute;
+                        bottom: 80px;
+                        left:50%;
+                        transform:translateX(-50%);
+                    }
+
+                    .btn:last-of-type {
+                        position:absolute;
+                        right:50%;
+                        bottom:15px;
+                        transform: translateX(50%);
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}

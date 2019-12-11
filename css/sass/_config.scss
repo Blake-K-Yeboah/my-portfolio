@@ -1,0 +1,19 @@
+// Define Variables
+$primaryColor: rgba(139,101,156,1);
+
+$mainGrey: #212121;
+
+$primaryGradient: linear-gradient(129deg, rgba(217,114,189,1) 0%, rgba(139,101,156,1) 100%);
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    overflow-x: hidden;
+}

@@ -1,0 +1,101 @@
+#home {
+
+    .home-content {
+        width: 70%;
+        height: 40%;
+        position:relative;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0,0,0,0.025);
+        border-radius: 10px;
+
+        @include smallHeight {
+            height: 57.5%;
+        }
+
+        @include verySmallHeight{
+            height: 62.5%;
+        }
+
+        .home-img {
+            border-radius:50%;
+            width: 150px;
+            margin: 2em 0 1em 0;
+            position:relative;
+            left:50%;
+            transform:translateX(-50%);
+            border: 5px solid transparent;
+
+            @include medium {
+                width:100px;
+            }
+        }
+
+        .name {
+            text-align:center;
+            font-size: 2rem;
+            font-weight: normal;
+            color: $mainGrey;
+            letter-spacing: .05em;
+
+            @include medium {
+                font-size:1.5rem;
+                letter-spacing: .025em;
+            }
+        }
+
+        .proffesion {
+            color: lighten($mainGrey, 10%);
+            font-weight: lighter;
+            text-align:center;
+            padding:15px 0;
+
+            @include medium {
+                font-size:1.25rem;
+            }
+        }
+
+        .social-icons {
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            list-style-type: none;
+            width: 15%;
+            margin: 15px auto;
+
+            @include veryLarge {
+                margin-top: 7.5px;
+                gap: 1em;
+                width: 20%;
+            }
+
+            @include large {
+                width:30%;
+            }
+
+            @include medium {
+                width:35%;
+            }
+            @include small {
+                width: 50%;
+            }
+            .social-icon-item {
+                .social-icon {
+                    color: $mainGrey;
+                    text-decoration:none;
+                    z-index:2;
+                    transition: .2s ease-in-out;
+
+                    &:hover {
+                        background: $primaryGradient;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+}

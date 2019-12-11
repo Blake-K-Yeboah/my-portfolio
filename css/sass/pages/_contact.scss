@@ -1,0 +1,155 @@
+#contact {
+
+    .title {
+        @include large {
+            margin: 1em 0;
+            text-align:center;
+        }
+    }
+    
+    .contact-content {
+        background: #fff;
+        width: 60%;
+        height: 55%;
+        margin:0 auto;
+        box-shadow: 0 0 15px rgba(0,0,0,0.025);
+        border-radius: 10px;
+
+        @include small {
+            height: 67.5%;
+            width: 80%;
+        }
+
+        @include smallHeight {
+            height: 65%;
+        }
+
+        @include verySmallHeight {
+            height: 80%; 
+        }
+
+        @include superSmallHeight {
+            height: 100%;
+        }
+
+        .sub-text {
+            color: $mainGrey;
+            font-weight:lighter;
+            font-size: 1.25rem;
+            padding: 2em 2em 1em 2em;
+            padding-left:10%;
+
+            @include veryLarge {
+                font-size: 1.15rem;
+            }
+
+            @include small {
+                text-align:center;
+            }
+        }
+
+        #contact-alert {
+            background: #a00;
+            height:40px;
+            width: 80%;
+            margin:0 auto;
+            display:none;
+            border-radius: 5px;
+
+            .alert-text {
+                color:#eee;
+                font-size: 1.1rem;
+                padding-left: 15px;
+                line-height:40px;
+                font-weight:lighter;
+
+                @include small {
+                    text-align:center;
+                }
+            }
+        }
+
+        .contact-form {
+            width:80%;
+            margin: 0 auto;
+
+            .form-group {
+                margin: 1.5em 0;
+
+                &:first-of-type {
+                    width: 100%;
+                    display:grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 1.75em;
+
+                    @include veryLarge {
+                        column-gap: 10%;
+                    }
+
+                    @include medium {
+                        grid-template-columns: 1fr;
+                        row-gap: 1.5em;
+                    }
+
+                    @include small {
+                        row-gap: 2em;
+                    }
+                }
+
+                .name {
+                    
+                    @include veryLarge {
+                        width:100%;
+                    }
+                }
+
+                input {
+                    background: transparent;
+                    border: none;
+                    border-bottom: 2px solid $mainGrey;
+                    padding-bottom: 10px;
+                    position:relative;
+                    font-size: 1.05rem;
+
+                    &:focus {
+                        outline:none;
+                        border-bottom-color: lighten($primaryColor, 10%);
+
+                        &::placeholder {
+                            color: lighten($primaryColor, 10%);
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    &.message {
+                        height: 100px;
+
+                        &::placeholder {
+                            font-family: Helvetica, sans-serif
+                        }
+                    }
+
+                    &.email {
+                        margin-top: 1em;
+                    }
+
+                    &.message, &.email {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            .btn {
+                margin-top: 1.25em;
+                width:100%;
+
+                .icon {
+                    padding-left:5px;
+                }
+            }
+        }
+
+    }
+
+}

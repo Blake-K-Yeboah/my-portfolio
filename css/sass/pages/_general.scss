@@ -1,0 +1,53 @@
+.page {
+    position:absolute;
+    left:20vw;
+    opacity: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #eee;
+    z-index:1;
+    overflow-y: scroll;
+    transition:  left .75s ease-in-out;
+    
+    &.left {
+        left:100vw;
+    }
+
+    @include medium {
+        left:15vw;
+        width: 90vw;
+        height: 110vh;
+    }
+
+    &.active {
+        opacity: 1;
+        z-index:2;
+    }
+
+    .title {
+        font-size: 3rem;
+        font-weight:lighter;
+        color: $mainGrey;
+        margin: 2.5em 0 1.25em 10%;
+
+        @include smallHeight {
+            margin: 1.25em 0 .75em 10%;
+        }
+
+        @include small {
+            margin: 1em 0;
+            text-align:center;
+        }
+    }
+
+    .sub-heading {
+        color: darken($mainGrey, 5%);
+        font-weight: lighter;
+        margin: 25px 10%;
+
+        @include small {
+            text-align:center;
+        }
+    }
+
+}
