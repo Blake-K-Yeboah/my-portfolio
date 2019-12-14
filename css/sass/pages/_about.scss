@@ -40,11 +40,11 @@
         }
 
         @include verySmallHeight {
-            min-height: 110%;
+            min-height: 120%;
         }
 
         @include superSmallHeight {
-            min-height: 120%;
+            min-height: 130%;
         }
         .about-img {
             position:absolute;

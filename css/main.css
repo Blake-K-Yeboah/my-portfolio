@@ -952,13 +952,13 @@ body {
 
 @media screen and (max-height: 668px) {
   #about .about-content {
-    min-height: 110%;
+    min-height: 120%;
   }
 }
 
 @media screen and (max-height: 568px) {
   #about .about-content {
-    min-height: 120%;
+    min-height: 130%;
   }
 }
 
