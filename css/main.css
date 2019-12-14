@@ -383,6 +383,11 @@ body {
           transform: translateY(-50%);
 }
 
+#skills .skill-list .skill-item .skill-logo.special {
+  width: 60%;
+  left: 20%;
+}
+
 @media screen and (max-width: 1052px) {
   #skills .skill-list .skill-item .skill-logo {
     width: 60%;

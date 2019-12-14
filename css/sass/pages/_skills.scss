@@ -83,6 +83,11 @@
                 top: 50%;
                 transform:translateY(-50%);
 
+                &.special {
+                    width: 60%;
+                    left: 20%;
+                }
+                
                 @include large {
                     width: 60%;
                     left:20%;
