@@ -358,6 +358,10 @@ body {
   border-left-color: #83CD29;
 }
 
+#skills .skill-list .skill-item#fire {
+  border-left-color: #FFCA28;
+}
+
 #skills .skill-list .skill-item#git {
   border-left-color: #DE4C36;
 }
