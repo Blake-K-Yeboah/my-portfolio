@@ -215,6 +215,37 @@ body {
   line-height: 42.5px;
 }
 
+.side-nav footer {
+  height: 5vh;
+  background: rgba(255, 255, 255, 0.125);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 802px) {
+  .side-nav footer {
+    bottom: 5vh;
+    display: none;
+  }
+}
+
+.side-nav footer.shown {
+  display: block;
+}
+
+.side-nav footer .text {
+  text-align: center;
+  line-height: 5vh;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1052px) {
+  .side-nav footer .text {
+    font-size: .8rem;
+  }
+}
+
 .page {
   position: absolute;
   left: 20vw;

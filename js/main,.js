@@ -43,10 +43,11 @@ let navIcon = document.querySelector('#nav-icon'),
     brand = document.querySelector('#brand'),
     list = document.querySelector('#nav-list'),
     pages = document.querySelectorAll('.page'),
-    closeIcon = document.querySelector('#close-icon');
+    closeIcon = document.querySelector('#close-icon'),
+    footer = document.querySelector('footer');
 
 navIcon.addEventListener('click', () => {
-    
+
     sidebar.classList.add('open');
 
     brand.classList.add('shown');
@@ -60,6 +61,8 @@ navIcon.addEventListener('click', () => {
     closeIcon.classList.add('shown');
 
     navIcon.style.display = 'none';
+
+    footer.classList.add('shown');
 })
 
 closeIcon.addEventListener('click', () => {
@@ -77,4 +80,6 @@ closeIcon.addEventListener('click', () => {
     closeIcon.classList.remove('shown');
 
     navIcon.style.display = 'block';
+
+    footer.classList.remove('shown');
 })

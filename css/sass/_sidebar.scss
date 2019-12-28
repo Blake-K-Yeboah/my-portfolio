@@ -138,4 +138,31 @@
             }
         }
     }
+
+    footer {
+        height: 5vh;
+        background: rgba(255,255,255,0.125);
+        position:absolute;
+        bottom: 0;
+        width:100%;
+
+        @include medium {
+            bottom: 5vh;
+            display:none;
+        }
+
+        &.shown {
+            display:block;
+        }
+
+        .text {
+            text-align:center;
+            line-height: 5vh;
+            font-size: 1rem;
+
+            @include large {
+                font-size: .8rem;
+            }
+        }
+    }
 }
