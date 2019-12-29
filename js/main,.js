@@ -1,3 +1,6 @@
+// Page Functionality
+
+
 const swapPage = newPage => {
 
     // Remove Current Active Link
@@ -18,6 +21,17 @@ const swapPage = newPage => {
 
 }
 
+const navItems = Array.from(document.querySelectorAll('.nav-item'));
+
+navItems.forEach(item => {
+    let page = item.getAttribute('data-page');
+
+    item.addEventListener('click', swapPage.bind(this, page));
+});
+
+
+// Form Validation 
+
 document.querySelector('#contact-form').addEventListener('submit', (e) => {
     // Define Inputs
     let firstName = document.querySelector('#fName').value,
@@ -37,6 +51,10 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
         }, 3500);
     }
 })
+
+
+
+// Mobile Navbar functionality
 
 let navIcon = document.querySelector('#nav-icon'),
     sidebar = document.querySelector('#side-nav'),
