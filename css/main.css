@@ -340,6 +340,10 @@ body {
   }
 }
 
+#skills .skill-list:last-of-type {
+  margin-bottom: 4em;
+}
+
 #skills .skill-list .skill-item {
   display: -ms-grid;
   display: grid;
