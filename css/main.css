@@ -589,6 +589,7 @@ body {
   gap: 1.5em 1.5em;
   width: 80%;
   list-style-type: none;
+  margin-bottom: 4em;
 }
 
 @media screen and (max-width: 1386px) {
@@ -609,10 +610,11 @@ body {
 #portfolio .projects .project {
   background: #fff;
   border-radius: 5px;
-  height: 450px;
+  height: 470px;
   position: relative;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-bottom: 5px solid #8b659c;
 }
 
 @media screen and (max-width: 1052px) {
@@ -689,7 +691,7 @@ body {
 #portfolio .projects .project .skills {
   padding-left: 10px;
   position: absolute;
-  bottom: 75px;
+  bottom: 95px;
 }
 
 @media screen and (max-width: 1052px) {
@@ -716,7 +718,7 @@ body {
 
 #portfolio .projects .project .btn-group {
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
   left: 10px;
 }
 
