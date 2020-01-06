@@ -415,6 +415,10 @@ body {
   border-left-color: #558CBB;
 }
 
+#skills .skill-list .skill-item#mobx {
+  border-left-color: #E66316;
+}
+
 #skills .skill-list .skill-item .skill-logo {
   width: 80%;
   position: relative;
