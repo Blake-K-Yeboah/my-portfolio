@@ -84,6 +84,9 @@
                 border-left-color: #E66316;
             }
 
+            &#express {
+                border-left-color: #B8B8B8;
+            }
             .skill-logo {
                 width:80%;
                 position:relative;
@@ -96,6 +99,11 @@
                     left: 20%;
                 }
                 
+                &.grey {
+                    filter: gray;
+                    -webkit-filter: grayscale(1);
+                    filter: grayscale(1);
+                }
                 @include large {
                     width: 60%;
                     left:20%;
