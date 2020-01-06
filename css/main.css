@@ -1032,7 +1032,7 @@ body {
 
 @media screen and (max-height: 780px) {
   #about .about-content {
-    min-height: 90%;
+    min-height: 100%;
   }
 }
 
