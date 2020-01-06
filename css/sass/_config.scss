@@ -9,6 +9,8 @@ $primaryGradient: linear-gradient(129deg, rgba(217,114,189,1) 0%, rgba(139,101,1
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: darken($primaryColor, 10%) transparent;
 }
 
 html, body {
@@ -22,4 +24,16 @@ body {
     display:grid;
     grid-template-columns: 1fr 4fr;
     overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primaryGradient;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
 }
