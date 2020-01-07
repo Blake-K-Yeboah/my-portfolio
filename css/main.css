@@ -437,6 +437,10 @@ body {
   border-left-color: #B8B8B8;
 }
 
+#skills .skill-list .skill-item#mongo {
+  border-left-color: #0F934D;
+}
+
 #skills .skill-list .skill-item .skill-logo {
   width: 80%;
   position: relative;
